@@ -1,0 +1,93 @@
+<!-- This is for the streamer invite -->
+​
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta name="x-apple-disable-message-reformatting">
+            <title>Email template</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+            <!--[if mso]>
+            <noscript>
+                <xml>
+                    <o:OfficeDocumentSettings>
+                        <o:PixelsPerInch>96</o:PixelsPerInch>
+                    </o:OfficeDocumentSettings>
+                </xml>
+            </noscript>
+            <![endif]-->
+            <style>
+                .background {
+                    background-image: url("https://inawo-frontend.s3.amazonaws.com/public/background.png");
+                    background-color: #34544F;
+                }
+                table, td, div, h3, p, button {
+                    font-family: 'Open Sans', sans-serif;
+                    color: black;
+                }
+            </style>
+        </head>
+        <body>
+        <div class="background" style="height: 700px; width: 500px; margin: auto; color: #34544F; padding: 20px">
+            <div>
+                <div>
+                    <img src="https://inawo-frontend.s3.amazonaws.com/public/inawo.png" alt="logo" style="display: block; margin-left: auto; margin-right: auto; padding-top: 35px; padding-bottom: 30px;">
+                </div>
+            </div>
+            <div class ="square" style="height: 550px; width: 450px; margin: auto; background-color: white;">
+                <p style="padding-top: 80px; padding-left: 25px;  font-size: 16px; font-weight: 100;">Hi {{.Name}},</p>
+                <div style="padding-bottom: 40px; width: 90%; margin: 0 auto;" >
+                    <p style="text-align: center; font-size: 16px; padding-top: 15px; font-weight: 100">
+                        <strong>{{.EventName}}</strong> invites you to be a part of their wedding by streaming and participating virtually via Inawo. <br/><br/>Please use the link below to start streaming or go to their wedding website to have a look at the order of events. </p>
+                    ​
+                    ​
+                    <div style="text-align: center; padding-top: 7px;">
+                        <a href="{{.URL}}" target="_blank" rel="noopener noreferrer">
+                        <button  style="width: 350px; height: 65px; padding: 10px 15px; font-size: 20px; background-color:#34544F; border: 5px solid #34544F; color: white;">
+                            Start Streaming
+                        </button>
+                        </a>
+                        ​
+                    </div>
+                    ​
+                    <p style="text-align: center; font-size: 15px; font-weight: 100;">
+                        or copy
+                    </p>
+                    <p style="text-align: center; font-size: 15px; font-weight: 100;">{{.URL}}</p>
+                </div>
+            </div>
+        </div>
+                <table style="margin: 0 auto;">
+                    <Tr>
+                        <Td >
+                            <a href="https://twitter.com/inawoweddings" target="_blank" rel="noopener noreferrer">
+                            <img src="https://inawo-frontend.s3.amazonaws.com/public/twitter-green2.png" style="padding: 15px; width: 22px;" alt="twitter" />
+                            </a>
+                        </Td>
+                        <Td>
+                            <a href="https://www.facebook.com/Inawo-Weddings-100140535884970/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://inawo-frontend.s3.amazonaws.com/public/Facebook-green2.png" style="padding: 15px;  width: 20px;" alt="facebook" />
+                            </a>
+                        </Td>
+                        <Td>
+                            <a href="https://www.instagram.com/inawoweddings/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer">
+                                <img src="https://inawo-frontend.s3.amazonaws.com/public/Instagram-green2.png" style="padding: 15px; width: 22px;" alt="instagram" />
+                            </a>
+                        </Td>
+                    </Tr>
+                </table>
+                ​
+                <div style="text-align:center; color:#34544F" >
+                    <p style="font-size: 14px; font-weight: 400;">www.inawo.com</p>
+                    <p style="font-size: 10px; font-weight: 400; padding-bottom: 15px;">
+                        5, Abiodun Akerele Street, Old Bodija, Ibadan
+                    </p>
+                </div>
+            ​
+        </body>
+        ​
+        ​
+    </html>
